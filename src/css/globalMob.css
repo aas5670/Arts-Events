@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway, arial, Verdana, sans-serif;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #F4EADE;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f2e7d9;
+}
+
+#header_container{
+    order: 1;
+    width: 100%;
+    background-color: #3d5f8f;
+    height: auto;
+}
+
+header{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#header_wrapper{
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#logo{
+    order: 1;
+    padding-left: 10px;
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+nav{
+    order: 2;
+    width: 100%;
+    display: none;
+}
+
+nav ul{
+    flex-direction: column;
+    background-color: #2e476b;
+    text-align: center;
+    width: 100%;
+}
+
+nav li{
+    border-top: 1px solid black;
+}
+
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    display:block;
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#currentPage{
+    color: #ffe9d3;
+    font-weight: bold;
+}
+
+#mob_drop_down{
+    order: 2;
+    height: 50px;
+    background-color: #2e476b;
+    width: 64px;
+    cursor: pointer;
+    display: block;
+}
+
+#mob_drop_down img{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#mob_drop_down img:nth-child(1){
+    display: block;
+}
+
+#mob_drop_down img:nth-child(2){
+    display: none;
+}
+
+#main_container{
+    order: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main{
+    order: 1;
+    margin: 33px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+#submitButton{
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #262626;
+    color: white;
+    margin-top: 3px;
+    font-weight: bold;
+    line-height: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#footer_container{
+    order: 4;
+    width: 100%;
+    height: auto;
+    background-color: #3d5f8f;
+}
+
+footer{
+    width: auto;
+    margin: 0 auto;
+}
+
+#footer_box{
+    padding: 33px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+
+#footer_box p:nth-child(1n + 0){
+    font-size: 1em;
+}
+
+#footer_box h1:nth-child(1n + 0){
+    padding-top: 15px;
+    font-size: .9em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+#footer_box .contact{
+    order: 1;
+}
+
+#footer_box .opening_times{
+    order: 2;
+}
+
+#footer_box .quick_links{
+    order: 3;
+}
+
+
+#footer_box .quick_links a{
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+#footer_box .other{
+    order: 4;
+    text-align: center;
+    width: 100%;
+}
+
+#footer_box .other img{
+    width: 32px;
+    height: 32px;
+}
+.currentPage{
+    font-weight: bold;
+    color: #ffe9d3;
+}
+
+main .cred_cont{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+main .cred_cont .cred_content{
+    height: auto;
+    order: 2;
+    width: 100%;
+    background-color: #3d5f8f;
+}
+
+
+.cred_info{
+    padding: 33px;
+}
+
+.cred_info h1{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.cred_section{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cred_section section{
+    margin-top: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cred_section section h2{
+    text-align: center;
+
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    #header_wrapper {
+        height: 100px;
+    }
+
+    nav a {
+        font-size: 2em;
+        height: 70px;
+        line-height: 70px;
+        vertical-align: middle;
+    }
+
+    #logo {
+        margin-top: 33px;
+    }
+
+    #mob_drop_down {
+        height: 100px;
+        width: 128px;
+    }
+
+    #footer_box .contact p {
+        font-size: .58em;
+    }
+
+    #footer_box .other p {
+        font-size: .58em;
+    }
+
+    #footer_box .quick_links a {
+        font-size: .58em;
+    }
+
+    #footer_box .opening_times p {
+        font-size: .58em;
+    }
+
+    #third_box .show_more {
+        height: 100px;
+    }
+
+    #third_box .show_more .plus_normal {
+        height: 48px;
+    }
+
+    #third_box .show_more .plus_normal img {
+        height: 100%;
+    }
+
+    #third_box .show_less {
+        height: 100px;
+    }
+
+    #third_box .show_less .minus_normal {
+        height: 48px;
+    }
+
+    #third_box .show_less .minus_normal img {
+        height: 100%;
+    }
+
+    #first_box .event_showcase_block .img_cont #img_num a {
+        font-size: 3em;
+        width: 60px;
+    }
+}
+@media only screen and (max-width: 569px) {
+    #third_box .box_container div:nth-child(1n+0) {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cred_section section{
+        width: 100%;
+    }
+
+    .cred_info{
+        padding: 0;
+    }
+
+    #third_box .box_container div:nth-child(2) {
+        margin-top: 33px;
+    }
+
+    .event_info p:nth-child(1n + 0) {
+        width: 100%;
+    }
+
+    #first_box .event_showcase_block .info {
+        height: auto;
+    }
+
+    #first_box .event_showcase_block .img_cont #img_num {
+        bottom: auto;
+    }
+
+    #first_box .left_column .news{
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #first_box .left_column .news h1 {
+        font-size: .8em;
+    }
+
+    #first_box .left_column .news h2 {
+        font-size: 1.05em;
+    }
+
+    #first_box .left_column .news p {
+        font-size: .9em;
+    }
+
+    #first_box .left_column .news a {
+        padding: 5px;
+        height: 15px;
+        line-height: 15px;
+        font-size: .8em;
+    }
+}

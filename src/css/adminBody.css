@@ -1,0 +1,281 @@
+
+main{
+    flex-direction: column;
+}
+
+main .admin_cont{
+    height: 100%;
+    min-height: 725px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .admin_cont .admin_nav{
+    order: 1;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(61, 95, 143, 0.9);
+}
+
+main .admin_cont .admin_nav .nav li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #3d5f8f;
+    margin-right: 30px;
+    width: 100%;
+    line-height: 50px;
+}
+
+main .admin_cont .admin_nav .nav li:hover{
+    background-color: rgba(61, 95, 143, 0.5);
+}
+
+main .admin_cont .admin_nav .nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-bottom: 1px black solid;
+}
+
+main .admin_cont .admin_nav .nav a:hover{
+    text-decoration: none;
+    color: #ffe9d3;
+    display: block;
+}
+
+main .admin_cont .admin_content{
+    height: 100%;
+    order: 2;
+    width: 100%;
+    background-color: #3d5f8f;
+}
+
+main .admin_cont .admin_content .eventAddition{
+    height: 100%;
+    margin-top: 33px;
+    margin-left: 60px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm fieldset{
+    width: 400px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventConfirm{
+
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm fieldset.eventDetails{
+    order: 1;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm fieldset.eventOther{
+    order: 2;
+    margin-left: 40px;
+}
+
+#subViewEvents{
+    margin-top: 10px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm textarea{
+    order: 2;
+    resize: vertical;
+    width: 400px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm #title{
+    height: 50px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm #desc{
+    height: 90px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm p.text{
+    order: 2;
+    width: 400px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm .eventOther .img_cont{
+    height: 225px;
+    width: 350px;
+    background-color: rgba(61, 95, 143, 0.9);
+    border: 1px solid black;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm .eventOther .img_cont .eveUPImg{
+    height: 225px;
+    width: 350px;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm fieldset.eventOther #resetSubmitAll{
+    margin-top: 100px;
+    margin-left: 0;
+}
+
+main .admin_cont .admin_content .eventAddition .eventForm fieldset.eventOther #updateSubmitAll{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+main .admin_cont .admin_content .list_events {
+    height: 676px;
+    overflow: scroll;
+}
+
+main .admin_cont .admin_content .list_events table, td, th{
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+main .admin_cont .admin_content .list_events table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main .admin_cont .admin_content .list_events th{
+    padding: 15px;
+}
+
+main .admin_cont .admin_content .list_events td:not(:first-child){
+    padding: 5px;
+}
+
+
+main .admin_cont .admin_content .select_event .eventSubmit{
+    margin-top: 33px;
+    margin-left: 50px;
+}
+
+.eventSubmit{
+    width: 160px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px black solid;
+    background-color: #262626;
+}
+
+.eventSubmit:hover{
+    cursor: pointer;
+    background-color: #595959;
+}
+
+.inputCont{
+    clear: both;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputCont .field{
+    order: 1;
+    font-weight: bold;
+    font-size: .95em;
+}
+
+.inputCont .field b{
+    order: 1;
+}
+
+.inputCont p{
+    order: 2;
+}
+
+main .admin_cont .admin_content .head{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+main .admin_cont .admin_content input.text, select, textarea, p.text{
+    order: 2;
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+main .admin_cont .admin_content select option{
+    color : black;
+}
+
+main .admin_cont .admin_content input.text-300{
+    width: 500px;
+    float: left;
+}
+
+main .admin_cont .admin_content input[type='file']{
+    order: 2;
+}
+
+#eventSubmitAll{
+    margin-left: 190px;
+    margin-top: 215px;
+}
+
+.errorMessage{
+    order: 3;
+    color: darkred;
+}
+
+b{
+    color: red;
+}
+
+.eveButton{
+    text-decoration: none;
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    line-height: 24px;
+}
+
+#addNewEvent{
+    margin-left: 190px;
+    margin-top: 215px;
+}
+
+.admin_info{
+    padding: 33px;
+}
+
+.admin_info h1{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.admin_section{
+    margin-top: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.admin_section section{
+    width: 45%;
+    height: 400px;
+}
+
+.admin_section section h2{
+    text-align: center;
+}
+
